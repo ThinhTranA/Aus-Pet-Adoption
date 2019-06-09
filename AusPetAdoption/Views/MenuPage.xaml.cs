@@ -1,13 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace AusPetAdoption.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class MenuPage : ContentPage
     {
-        public AboutPage()
+        public MenuPage()
         {
             InitializeComponent();
         }

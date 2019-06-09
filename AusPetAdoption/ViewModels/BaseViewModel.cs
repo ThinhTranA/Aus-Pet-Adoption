@@ -5,14 +5,13 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using AusPetAdoption.Models;
 using AusPetAdoption.Services;
 
 namespace AusPetAdoption.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+
 
         bool isBusy = false;
         public bool IsBusy
