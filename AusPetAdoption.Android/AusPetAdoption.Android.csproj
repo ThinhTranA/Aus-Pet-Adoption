@@ -68,6 +68,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helpers\AndroidHelpers.cs" />
     <Compile Include="Renderers\BottomNavTabPageRenderer.cs" />
+    <Compile Include="Renderers\EntryWithoutBorderRenderer.cs" />
+    <Compile Include="Renderers\EditorWithoutBorderRenderer.cs" />
+    <Compile Include="Renderers\DatePickerWBRenderer.cs" />
+    <Compile Include="Renderers\PickerWBRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
