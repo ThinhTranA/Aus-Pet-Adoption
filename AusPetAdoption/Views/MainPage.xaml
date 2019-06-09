@@ -2,7 +2,8 @@
 <controls:BottomNavTabPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
             xmlns:views="clr-namespace:AusPetAdoption.Views" x:Class="AusPetAdoption.Views.MainPage"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            android:TabbedPage.ToolbarPlacement="Bottom"              
+            android:TabbedPage.ToolbarPlacement="Bottom" 
+            android:BarBackgroundColor="#f9f9f9"
             xmlns:controls="clr-namespace:AusPetAdoption.Controls"
             >
     <TabbedPage.Children>

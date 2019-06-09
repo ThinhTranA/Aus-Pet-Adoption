@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AusPetAdoption.Views.NewPostPage">
+    
+    <NavigationPage.TitleView>
+        <AbsoluteLayout  HorizontalOptions="FillAndExpand">
+           <Button Command="{Binding CancelCommand}" TextColor="White" BackgroundColor="Transparent"
+                Text="Cancel" HorizontalOptions="Start"/>
+           <Label Text="Post" TextColor="White"
+                  VerticalOptions="CenterAndExpand"
+                  HorizontalOptions="CenterAndExpand"
+                   AbsoluteLayout.LayoutBounds=".5,.5,100,25" AbsoluteLayout.LayoutFlags="PositionProportional"
+                  FontAttributes="Bold"
+                  FontSize="16"
+                  
+                  />
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+       <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" BackgroundColor="#ecf0f1">
+              <ImageButton Source="addphoto_icon.png" 
+                           HeightRequest="50" WidthRequest="50"
+                           HorizontalOptions="Center" BackgroundColor="Transparent" Margin="0,20,0,0"/>
+              <Label Margin="0,0,0,0" Font="12" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="#3498DB"
+                Text="Add a Photo"></Label>
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+    

@@ -18,9 +18,21 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Controls\" />
+    <Folder Include="Views\Post\" />
+    <Folder Include="Views\Menu\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Services\AzureDataStore.cs" />
     <Compile Remove="Services\MockDataStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Post\PostPage.xaml.cs">
+      <DependentUpon>PostPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Menu\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

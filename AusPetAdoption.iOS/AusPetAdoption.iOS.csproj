@@ -128,6 +128,8 @@
     <BundleResource Include="Resources\post_icon.png" />
     <BundleResource Include="Resources\home_icon%402x.png" />
     <BundleResource Include="Resources\favourite_icon.png" />
+    <BundleResource Include="Resources\addphoto_icon.png" />
+    <BundleResource Include="Resources\addnew_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

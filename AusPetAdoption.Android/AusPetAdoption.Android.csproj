@@ -96,6 +96,8 @@
     <AndroidResource Include="Resources\drawable\menu_icon.png" />
     <AndroidResource Include="Resources\drawable\home_icon.png" />
     <AndroidResource Include="Resources\drawable\favourite_icon.png" />
+    <AndroidResource Include="Resources\drawable\addphoto_icon.png" />
+    <AndroidResource Include="Resources\drawable\addnew_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />

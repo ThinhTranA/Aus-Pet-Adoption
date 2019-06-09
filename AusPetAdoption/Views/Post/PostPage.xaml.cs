@@ -11,5 +11,10 @@ namespace AusPetAdoption.Views
         {
             InitializeComponent();
         }
+
+        void AddPostCommand(object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new NewPostPage()));
+        }
     }
 }
