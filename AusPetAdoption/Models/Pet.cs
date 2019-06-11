@@ -6,7 +6,7 @@ namespace AusPetAdoption.Models
     {
         public string PostTitle { get; set; }
         public string Description { get; set; }
-        public string Type { get; set; }
+        public string PetType { get; set; }
         public string Breed { get; set; }
 
         public string ImageUrl { get; set; }
