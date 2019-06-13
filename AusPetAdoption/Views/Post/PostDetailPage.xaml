@@ -7,41 +7,53 @@
                  <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Start"/>
             </Style>
-            
+            <Style x:Key="DetailBoldLabel" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" >
+             <Label VerticalOptions="Center" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand" TextColor="White" Text="Fee:" />
+             <Label VerticalOptions="Center" HorizontalTextAlignment="End" HorizontalOptions="End" TextColor="Green" Text="$111"/>
+        </StackLayout>
+       
+    </NavigationPage.TitleView>
     <ContentPage.Content> 
         <ScrollView>
             <StackLayout>
-               <!-- <Image WidthRequest="200" HeightRequest="400" Source="{Binding Pet.ImageUrl}"/>-->
+                <Image HeightRequest="400" Source="{Binding Pet.ImageUrl}"/>
                 <StackLayout Padding="10">
-                    <Label Text="PostTitle" FontSize="Large" TextColor="{StaticResource NavigationPrimary}"/>
+                    <Label Text="PostTitle" FontSize="Large" FontAttributes="Bold" TextColor="{StaticResource NavigationPrimary}"/>
                     <Label Text="location" TextColor="Gray"/>
-                    <Label Margin="0,10" Text="Cat * Male * Young * Medium"/>
+                    <Label Margin="0,10,0,0" Text="Cat * Male * Young * Medium"/>
+                    <ImageButton Source="favourite_icon.png" HorizontalOptions="End"/>
                     <Label Text="Description" Style="{StaticResource HeaderLabel}"/>
                     <Label Text="very long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctiono"/>
                     
-                    <BoxView Style="{StaticResource ThinSeperatorLine}"/>
+                    <BoxView Margin="0,10" Style="{StaticResource ThinSeperatorLine}"/>
                     <Label Text="General info" Style="{StaticResource HeaderLabel}"/>
                     <Grid>
-                        <Label Grid.Row="0" Text="Pet type:"/>  
-                        <Label Grid.Row="1" Text="Cat"/>
-                        <Label Grid.Row="2" Text="Gender:"/>
-                        <Label Grid.Row="3" Text="Male"/>
-                        <Label Grid.Row="4" Text="Size"/>
-                        <Label Grid.Row="5" Text="Medium"/>
+                        <Label Grid.Row="0" Style="{StaticResource DetailSmallLabel}" Text="Pet type:" />  
+                        <Label Grid.Row="1" Style="{StaticResource DetailBoldLabel}" Text="Cat"/>
+                        <Label Grid.Row="2" Style="{StaticResource DetailSmallLabel}" Text="Gender:"/>
+                        <Label Grid.Row="3" Style="{StaticResource DetailBoldLabel}" Text="Male"/>
+                        <Label Grid.Row="4" Style="{StaticResource DetailSmallLabel}" Text="Size"/>
+                        <Label Grid.Row="5" Style="{StaticResource DetailBoldLabel}" Text="Medium"/>
                         
-                        <Label Grid.Row="0" Grid.Column="1" Text="Pet type:"/>  
-                        <Label Grid.Row="1" Grid.Column="1" Text="Cat"/>
-                        <Label Grid.Row="2" Grid.Column="1" Text="Gender:"/>
-                        <Label Grid.Row="3" Grid.Column="1" Text="Male"/>
-                        <Label Grid.Row="4" Grid.Column="1" Text="Size"/>
-                        <Label Grid.Row="5" Grid.Column="1" Text="Medium"/>
+                        <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Breed:"/>  
+                        <Label Grid.Row="1" Grid.Column="1" Style="{StaticResource DetailBoldLabel}" Text="Cat"/>
+                        <Label Grid.Row="2" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Gender:"/>
+                        <Label Grid.Row="3" Grid.Column="1" Style="{StaticResource DetailBoldLabel}" Text="Male"/>
+                        <Label Grid.Row="4" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Size"/>
+                        <Label Grid.Row="5" Grid.Column="1" Style="{StaticResource DetailBoldLabel}" Text="Medium"/>
                     </Grid>
                     
+                      <BoxView Margin="0,10" Style="{StaticResource ThinSeperatorLine}"/>
                      <Label Text="Location" Style="{StaticResource HeaderLabel}"/>
-                    <Grid>
+                    <Grid Padding="0,20">
                         <Label Grid.Row="0" Grid.RowSpan="3" VerticalOptions="Center" Text="IamgeHomeICon"/>
                         <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Headquarter"/>
                         <Label Grid.Row="1" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Address go here"/>

@@ -13,8 +13,7 @@
                   HorizontalOptions="CenterAndExpand"
                    AbsoluteLayout.LayoutBounds=".5,.5,100,25" AbsoluteLayout.LayoutFlags="PositionProportional"
                   FontAttributes="Bold"
-                  FontSize="16"
-                  
+                  FontSize="16" 
                   />
         </AbsoluteLayout>
     </NavigationPage.TitleView>
@@ -69,7 +68,7 @@
             </ScrollView>
           
       
-         <StackLayout Grid.Row="1" BackgroundColor="#White">
+         <StackLayout  Grid.Row="1" BackgroundColor="#White">
             <Grid>
                 <Button Grid.Column="0" Text="Preview" TextColor="{StaticResource ButtonGrayColor}"
                         WidthRequest="160" 

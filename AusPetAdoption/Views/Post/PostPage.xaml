@@ -2,6 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AusPetAdoption.Views.PostPage">
     <ContentPage.Content>
         <AbsoluteLayout>
+             <ListView x:Name="PetsListView" ItemsSource="{Binding PetList}" 
+                  ItemSelected="OnPetSelected"
+                  HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10,0">
+                             <StackLayout Grid.Column="1" Grid.ColumnSpan="2">
+                                <Label  Text="{Binding PostTitle}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="StartAndExpand"></Label>
+                                <Label  Text="{Binding PetType}" FontSize="Medium" HorizontalOptions="StartAndExpand"></Label>
+                                <Label  Text="{Binding DescriptionSummary}" FontSize="Small" FontAttributes="Italic" HorizontalOptions="StartAndExpand"></Label>
+                            </StackLayout>
+                       
+                      
+                        <Image Grid.Column="0" 
+                               Source="{Binding ImageUrl}" Aspect="AspectFit"/>
+                        </Grid>
+                       
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+            
             <ImageButton Source="addnew_icon.png"
             BackgroundColor="Transparent"
             AbsoluteLayout.LayoutFlags="PositionProportional"  
