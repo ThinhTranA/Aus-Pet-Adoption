@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AusPetAdoption.Views.PostDetailPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+             <Style x:Key="DetailSmallLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content> 
+        <ScrollView>
+            <StackLayout>
+               <!-- <Image WidthRequest="200" HeightRequest="400" Source="{Binding Pet.ImageUrl}"/>-->
+                <StackLayout Padding="10">
+                    <Label Text="PostTitle" FontSize="Large" TextColor="{StaticResource NavigationPrimary}"/>
+                    <Label Text="location" TextColor="Gray"/>
+                    <Label Margin="0,10" Text="Cat * Male * Young * Medium"/>
+                    <Label Text="Description" Style="{StaticResource HeaderLabel}"/>
+                    <Label Text="very long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctionovery long desctiono"/>
+                    
+                    <BoxView Style="{StaticResource ThinSeperatorLine}"/>
+                    <Label Text="General info" Style="{StaticResource HeaderLabel}"/>
+                    <Grid>
+                        <Label Grid.Row="0" Text="Pet type:"/>  
+                        <Label Grid.Row="1" Text="Cat"/>
+                        <Label Grid.Row="2" Text="Gender:"/>
+                        <Label Grid.Row="3" Text="Male"/>
+                        <Label Grid.Row="4" Text="Size"/>
+                        <Label Grid.Row="5" Text="Medium"/>
+                        
+                        <Label Grid.Row="0" Grid.Column="1" Text="Pet type:"/>  
+                        <Label Grid.Row="1" Grid.Column="1" Text="Cat"/>
+                        <Label Grid.Row="2" Grid.Column="1" Text="Gender:"/>
+                        <Label Grid.Row="3" Grid.Column="1" Text="Male"/>
+                        <Label Grid.Row="4" Grid.Column="1" Text="Size"/>
+                        <Label Grid.Row="5" Grid.Column="1" Text="Medium"/>
+                    </Grid>
+                    
+                     <Label Text="Location" Style="{StaticResource HeaderLabel}"/>
+                    <Grid>
+                        <Label Grid.Row="0" Grid.RowSpan="3" VerticalOptions="Center" Text="IamgeHomeICon"/>
+                        <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Headquarter"/>
+                        <Label Grid.Row="1" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Address go here"/>
+                        <Label Grid.Row="2" Grid.Column="1" Style="{StaticResource DetailSmallLabel}" Text="Ph: 99999999"/>
+                    </Grid>
+                </StackLayout>
+              
+                
+                
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

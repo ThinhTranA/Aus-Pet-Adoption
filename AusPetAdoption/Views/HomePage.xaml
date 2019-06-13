@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AusPetAdoption.Views.HomePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AusPetAdoption.Views.HomePage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             >
     <ContentPage.Content>
-        <ListView x:Name="petList" ItemsSource="{Binding PetList}" HasUnevenRows="true">
+        <ListView x:Name="PetsListView" ItemsSource="{Binding PetList}" 
+                  ItemSelected="OnPetSelected"
+                  HasUnevenRows="true">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
-                        <Label Grid.Column="1" Text="{Binding PetType}"></Label>
-                        <Image Grid.Column="0" Grid.RowSpan="3"
-                               Source="{Binding ImageUrl}" Aspect="AspectFit"/>
+                        <Grid Padding="10,0">
+                             <StackLayout Grid.Column="1" Grid.ColumnSpan="2">
+                                <Label  Text="{Binding PostTitle}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="StartAndExpand"></Label>
+                                <Label  Text="{Binding PetType}" FontSize="Medium" HorizontalOptions="StartAndExpand"></Label>
+                                <Label  Text="{Binding DescriptionSummary}" FontSize="Small" FontAttributes="Italic" HorizontalOptions="StartAndExpand"></Label>
+                            </StackLayout>
+                       
+                        <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+                            WidthRequest="160" HeightRequest="160"
+                            DownsampleToViewSize="true"
+                            Source="{Binding ImageUrl}">
+                            <ffimageloading:CachedImage.Transformations>
+                                <fftransformations:CircleTransformation />
+                            </ffimageloading:CachedImage.Transformations>
+                        </ffimageloading:CachedImage>
+                       <!-- <Image Grid.Column="0" 
+                               Source="{Binding ImageUrl}" Aspect="AspectFit"/>-->
                         </Grid>
                        
                     </ViewCell>

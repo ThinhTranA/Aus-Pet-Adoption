@@ -12,6 +12,12 @@
                  <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Start"/>
             </Style>
+            <Style x:Key="HeaderLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            </Style>
             <Style x:Key="ThinSeperatorLine" TargetType="BoxView">
                  <Setter Property="Color" Value="{StaticResource SeperatorLineColor}"/>
                  <Setter Property="HeightRequest" Value="1"/>
@@ -26,7 +32,7 @@
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
-

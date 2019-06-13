@@ -14,5 +14,8 @@ namespace AusPetAdoption.Models
         public string Size { get; set; }
         public string Location { get; set; }
 
+
+        public string DescriptionSummary { get { return Description?.Length < 50 ? Description : (Description?.Substring(0,47)+ "..."); } }
+
     }
 }
