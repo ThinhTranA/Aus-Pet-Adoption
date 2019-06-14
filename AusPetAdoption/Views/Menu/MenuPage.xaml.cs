@@ -11,5 +11,10 @@ namespace AusPetAdoption.Views
         {
             InitializeComponent();
         }
+
+        void ViewProfileTapped(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
