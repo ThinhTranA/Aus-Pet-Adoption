@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AusPetAdoption.MobileAppSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AusPetAdoption", "AusPetAdoption\AusPetAdoption.csproj", "{0B025679-56BC-4A50-A9E7-B8C640456C88}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AusPetAdoption.DataObjects", "AusPetAdoption.DataObjects\AusPetAdoption.DataObjects.shproj", "{2091DB79-748C-4728-A1C0-C03AB890687F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

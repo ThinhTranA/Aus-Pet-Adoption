@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AusPetAdoption.Models;
+using AusPetAdoption.DataObjects;
 namespace AusPetAdoption.Services
 {
     public static class SamplePetData

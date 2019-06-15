@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using AusPetAdoption.Models;
+using AusPetAdoption.DataObjects;
 using AusPetAdoption.ViewModels;
 
 namespace AusPetAdoption.Views

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-using AusPetAdoption.Models;
+using AusPetAdoption.DataObjects;
 using AusPetAdoption.Services;
 
 namespace AusPetAdoption.ViewModels

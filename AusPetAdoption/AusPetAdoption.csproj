@@ -19,7 +19,6 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Controls\" />
     <Folder Include="Views\Post\" />
     <Folder Include="Views\Menu\" />
@@ -38,4 +37,5 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+  <Import Project="..\AusPetAdoption.DataObjects\AusPetAdoption.DataObjects.projitems" Label="Shared" Condition="Exists('..\AusPetAdoption.DataObjects\AusPetAdoption.DataObjects.projitems')" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-using AusPetAdoption.Models;
+using AusPetAdoption.DataObjects;
 
 namespace AusPetAdoption.ViewModels
 {
