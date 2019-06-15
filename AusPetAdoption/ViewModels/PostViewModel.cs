@@ -13,5 +13,7 @@ namespace AusPetAdoption.ViewModels
         {
             PetList = new ObservableCollection<Pet>(SamplePetData.Pets);
         }
+
     }
 }
+

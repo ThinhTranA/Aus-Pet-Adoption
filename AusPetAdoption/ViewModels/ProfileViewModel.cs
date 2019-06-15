@@ -10,7 +10,7 @@ namespace AusPetAdoption.ViewModels
 
         public ProfileViewModel()
         {
-            test that Azure CI should failed to build
+           
         }
     }
 }
