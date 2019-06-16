@@ -43,18 +43,7 @@ namespace AusPetAdoption.Services
                 Location = "Central and East Africa",
             });
 
-            Pets.Add(new Pet
-            {
-                PostTitle = "hunting capabilities and good scenting ability. ",
-                Description = "The Aidi (Berber for dog) is recognized as coming from North Africa (Atlas Mountains of Morocco and Algeria). The dog has never worked as a sheepdog even though the 1963 standard was published under the name Atlas Sheepdog; this was ",
-                PetType = "Dog",
-                Breed = "Aidi",
-                ImageUrl = "https://en.wikipedia.org/wiki/Aidi#/media/File:Aidi.jpg",
-                DateOfBirth = DateTime.UtcNow.AddDays(-new Random().Next(1000)),
-                Size = sizes.Random(),
-                Location = "",
-            });
-
+           
             Pets.Add(new Pet
             {
                 PostTitle = "Bassets are large, short, solid and long,",

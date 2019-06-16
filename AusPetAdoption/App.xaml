@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AusPetAdoption.App">
     <Application.Resources>
         <ResourceDictionary>
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="materialdesignicons-webfont.ttf" />
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+            
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Color x:Key="ButtonGrayColor">#a1a1a1</Color>

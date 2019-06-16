@@ -133,6 +133,9 @@
     <BundleResource Include="Resources\favourite_icon.png" />
     <BundleResource Include="Resources\addphoto_icon.png" />
     <BundleResource Include="Resources\addnew_icon.png" />
+    <BundleResource Include="Resources\materialdesignicons-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
