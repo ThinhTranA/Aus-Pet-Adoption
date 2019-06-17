@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Plugin.CurrentActivity;
 
 namespace AusPetAdoption.Droid
 {
@@ -19,6 +19,7 @@ namespace AusPetAdoption.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
@@ -33,5 +34,11 @@ namespace AusPetAdoption.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        //The WRITE_EXTERNAL_STORAGE & READ_EXTERNAL_STORAGE permissions are required, but the library will automatically add these 
+        //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        //{
+        //    PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //}
     }
 }

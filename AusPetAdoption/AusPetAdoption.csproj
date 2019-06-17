@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
@@ -20,7 +21,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Views\Post\" />
     <Folder Include="Views\Menu\" />
   </ItemGroup>
   <ItemGroup>
@@ -30,12 +30,15 @@
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Post\PostPage.xaml.cs">
       <DependentUpon>PostPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Menu\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Post\PostPhotosPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="..\AusPetAdoption.DataObjects\AusPetAdoption.DataObjects.projitems" Label="Shared" Condition="Exists('..\AusPetAdoption.DataObjects\AusPetAdoption.DataObjects.projitems')" />
 </Project>

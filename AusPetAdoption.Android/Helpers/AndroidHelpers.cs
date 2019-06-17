@@ -32,7 +32,7 @@ namespace AusPetAdoption.Droid.Helpers
                     if (item == null)
                         continue;
 
-                    item.SetShiftingMode(enableItemShiftMode);
+                   // item.SetShiftingMode(enableItemShiftMode);
                     item.SetChecked(item.ItemData.IsChecked);
 
                 }
